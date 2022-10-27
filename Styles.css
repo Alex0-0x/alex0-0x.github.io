@@ -1,0 +1,8 @@
+body {
+    font-size: 22px;
+}
+
+h1 { 
+    max-width: 200px;
+    border: 300px;
+}
