@@ -1,8 +1,11 @@
-body {
-    font-size: 22px;
-}
 
 h1 { 
-    max-width: 200px;
-    border: 300px;
+    max-width: 50%;    
+}
+
+table, tr, th, td, caption {
+    border: 1px solid #888;
+    border-collapse: collapse;
+    padding: .5rem;
+    min-width: 40ch;
 }
