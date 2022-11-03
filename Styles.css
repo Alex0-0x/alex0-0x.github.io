@@ -1,11 +1,20 @@
 
-h1 { 
-    max-width: 50%;    
-}
-
-table, tr, th, td, caption {
-    border: 1px solid #888;
+table, tr, th, td, caption {    
+    border: .1rem solid #888;
     border-collapse: collapse;
     padding: .5rem;
-    min-width: 40ch;
+}
+
+.left {
+    float: left;
+    margin-right: 1rem;
+}
+
+.right {
+    float: right;
+    margin-left: 1rem;
+}
+
+.nowrap {
+    white-space: nowrap;
 }
