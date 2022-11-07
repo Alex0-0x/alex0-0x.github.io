@@ -9,14 +9,12 @@
     <link rel="stylesheet" href="/Styles.css">
 </head>
 <body>
-    <main>
+    <Header class="header el">
+        <h1>Alexander Mathias Thamdrup</h1>
+        <h2>Datatekniker med speciale i programmering</h2>
+    </Header>
 
-        <Header>
-            <h1>Alexander Mathias Thamdrup</h1>
-            <h2>Datatekniker med speciale i programmering</h2>
-            <hr class="devider">
-        </Header>
-    
+    <main class="el">    
         <section id="profil">
             <h2>Profil</h2>
             <p>Jeg har en stor interesse inden for IT. Det er især programmering finder jeg interessant. For mig er programmering et logisk puslespil. Jeg kan at kode mig en løsning til de udfordringer og mål som skal klares. Jeg er meget logisk tænkende person.</p>
@@ -30,39 +28,36 @@
                     <th>færdi</th>
                 </tr>
                 <tr>
-                    <td>GF2</td>
+                    <td>Grundforløb 2</td>
                     <td>Oktober 2022</td>
                 </tr>
             </table>        
         </section>
     </main>
-    <section id="IT">
-        <h2>IT kompetancer</h2>
-        <ul>
-            <li>Cisco</li>
-            <li>Windows</li>
-            <li>Microsoft office</li>
-            <li>
-                <aside>
-                    <summary>Programmering</summary>
-                    <details>
-                        <dl>
-                            <dt>Sprog</dt>
-                            <dd>C#</dd>
-                            <dd>HTML</dd>
-                            <dd>CSS</dd>
-                        </dl>
-                    </details>
-                </aside>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2>Sprog</h2>
-        <ul>
-            <li>Dansk</li>
-            <li>Engelsk</li>
-        </ul>
-    </section>
+
+    <aside class="sidebar el">
+        <section id="IT">
+            <h2>IT kompetancer</h2>
+            <ul>
+                <li>Cisco</li>
+                <li>Windows</li>
+                <li>Microsoft office</li>
+                <li>Programmering
+                    <ul>
+                        <li>C#</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Sprog</h2>
+            <ul>
+                <li>Dansk</li>
+                <li>Engelsk</li>
+            </ul>
+        </section>
+    </aside>
 </body>
 </html>

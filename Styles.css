@@ -1,4 +1,45 @@
 
+html {
+    height: 100%;
+}
+
+body {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 7rem auto;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd"
+    "sb sb mn mn mn mn mn mn mn";
+    margin: 0 auto;
+    min-width: 40rem;
+    max-width: 60rem;
+    height: 100%;
+}
+
+.el {
+    display: grid;
+    place-content: start center;
+}
+
+.header {
+    grid-area: hd;
+    text-align: center;
+}
+
+.sidebar {
+    background-color: rgb(102, 188, 223);
+    grid-area: sb;
+}
+
+main {
+    grid-area: mn;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
 table, tr, th, td, caption {    
     border: .1rem solid #888;
     border-collapse: collapse;
