@@ -1,49 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 html {
     height: 100%;
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: #333;
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-auto-rows: 7rem auto;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: 8rem auto;
     grid-template-areas: 
-    "hd hd hd hd hd hd hd hd hd"
-    "sb sb mn mn mn mn mn mn mn";
-    margin: 0 auto;
+        "hd hd hd hd hd hd hd hd"
+        "sb sb mn mn mn mn mn mn";
+    margin: 2rem auto;
     min-width: 40rem;
     max-width: 60rem;
     height: 100%;
 }
 
-.el {
-    display: grid;
-    place-content: start center;
-}
-
-.header {
-    grid-area: hd;
-    text-align: center;
-}
-
-.sidebar {
-    background-color: rgb(102, 188, 223);
-    grid-area: sb;
-}
-
-main {
-    grid-area: mn;
-}
-
 h1 {
-    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+h2 {
+    margin: 1.5rem;
+}
+
+ul {
+    padding-left: 2rem;
+    list-style-type: disc;
+    list-style: inside;
+}
+
+ul ul {
+    list-style-type: circle;
 }
 
 table, tr, th, td, caption {    
     border: .1rem solid #888;
     border-collapse: collapse;
-    padding: .5rem;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
 }
 
 .left {
@@ -58,4 +59,27 @@ table, tr, th, td, caption {
 
 .nowrap {
     white-space: nowrap;
+}
+
+.el {
+    display: grid;
+    place-content: start center;
+    background-color: whitesmoke;
+}
+
+.header {
+    grid-area: hd;
+    text-align: center;
+    border-bottom: .1rem solid #66bcdf;
+}
+
+.sidebar {
+    background-color: #66bcdf;
+    grid-area: sb;
+}
+
+main {
+    grid-area: mn;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
