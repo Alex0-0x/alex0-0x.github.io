@@ -31,9 +31,9 @@ h2 {
 }
 
 .divider {
-    margin: 1rem auto;
+    margin: 1em auto;
     background-color: rgb(4, 22, 71);
-    height: .3rem;
+    height: .3em;
     width: 95%;
 }
 
@@ -50,8 +50,8 @@ ul ul {
 table, tr, th, td, caption {    
     border: .1rem solid #888;
     border-collapse: collapse;
-    padding-inline-start: 1rem;
-    padding-inline-end: 1rem;
+    padding-inline-start: 1em;
+    padding-inline-end: 1em;
 }
 
 .left {
