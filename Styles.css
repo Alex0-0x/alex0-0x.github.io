@@ -34,7 +34,7 @@ body {
     margin: var(--MARGIN) auto;
     min-width: 40rem;
     max-width: 60rem;
-    height: 100%;
+    height: clamp(600px, 960px, 100vh);
     position: relative;
 }
 
@@ -87,6 +87,10 @@ table, tr, th, td, caption {
     border-collapse: collapse;
     padding-inline-start: 1em;
     padding-inline-end: 1em;
+}
+
+p {
+    margin-top: .5em;
 }
 
 .nowrap {
